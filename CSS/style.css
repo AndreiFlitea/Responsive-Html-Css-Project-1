@@ -66,10 +66,10 @@ a {
 }
 
 .link-arrow {
-    color: var(--color-accent);
     text-transform: uppercase;  
-    font-size: 2rem; 
     font-weight: bold;
+    font-size: 2rem; 
+    color: var(--color-accent);
 }
  
 .link-arrow::after {
@@ -85,5 +85,38 @@ a {
 @media screen and (min-width:1024px) {
     .link-arrow {
         font-size: 1.5rem;
+    }
+}
+
+/* Badges */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;    
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color:white
+}
+
+.badge--secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }
