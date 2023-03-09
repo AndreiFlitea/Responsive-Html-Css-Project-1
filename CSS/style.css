@@ -298,6 +298,8 @@ a {
     overflow: hidden;
 }
 
+
+
 .card__header, .card__body {
     padding: 2rem 3rem;
 }
@@ -348,6 +350,26 @@ a {
 .plan .list__item {
     letter-spacing: 1px;
     margin-bottom: 2rem;
+}
+
+.popular {
+    position: absolute;
+    width:5rem;
+    top:-0.2rem;
+    right:2rem;
+}
+
+.plan--popular .card__header {
+    position:relative;
+}
+
+.plan--popular .card__header::before {
+    content: url(../icons/popular.svg);
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    top: -6px;
+    right:  5%;
 }
 
 @media screen and (min-width:1024px) {
