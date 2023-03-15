@@ -205,7 +205,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;  
     text-align: center;  
     white-space: nowrap;     
@@ -308,6 +308,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
  }
 
 .input-group .btn {
@@ -574,6 +575,7 @@ a {
 .callout {
     padding:4rem;
     border-radius: 5px;
+    
 }
 
 .callout--primary {
@@ -612,7 +614,17 @@ a {
         justify-self: start;
         margin-left: 5rem;
     }
-}
+
+    .callout {
+        width: 70vw;
+        margin: 0 auto;       
+    }
+    .callout__container {
+        width: 100%;
+        margin: 0;
+        background-image: linear-gradient(to top, #232323 50%, white 50%);
+    }
+}    
 
 /* Collapsibles */
 
@@ -811,12 +823,13 @@ a {
 
 .block-domain__prices{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
     align-items: center;
     font-size: 2rem;
     font-weight: 600;
+    color: var(--color-heading);
 }
 
 @media screen and (min-width: 768px) {
@@ -839,7 +852,7 @@ a {
     margin: 0 auto;
 }
 
-/* Features */
+/* Features Block*/
 
 .feature__img {
   width: 100%
@@ -860,8 +873,8 @@ a {
 
 @media screen and (min-width:768px) {
     .feature:nth-of-type(even) .feature__content{
-        order: 2;
-    }
+        order: 2;        
+    }   
 }
 
 /* Showcase Block */
@@ -882,7 +895,11 @@ a {
     .block-showcase__image > img {
         width: auto;
         max-width: 700px;
-    }    
+    }   
+    
+    .block-showcase p {
+        font-size: 1.8rem;
+    }
 
 }
 
